@@ -4,6 +4,10 @@
         "node": true,
         "jest/globals": true
     },
+    "globals": {
+        "__dirname": "readonly",
+        "__filename": "readonly"
+    },
     "extends": [
         "standard"
     ],
@@ -17,6 +21,7 @@
         "jest"
     ],
     "rules": {
-        "indent": ["warn", 4]
+        "indent": ["warn", 4],
+        "n/no-callback-literal": "off"
     }
 }
